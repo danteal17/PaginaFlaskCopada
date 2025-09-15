@@ -1,5 +1,6 @@
 from flask import Flask,render_template,redirect,request
 import random
+import os
 
 
 # declaramos la aplicacion
@@ -209,6 +210,7 @@ def jorje():
 
 # inicio la aplicacion
 app.run(host="0.0.0.0",port = int(os.environ.get("PORT",10000)))
+
 
 
 
